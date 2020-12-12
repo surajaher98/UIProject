@@ -1,0 +1,960 @@
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+.header{
+    position: fixed;    
+    background: white;
+    z-index: 1101;
+}
+.layout{
+   margin:0 auto; /* this will center the page */
+   width:1180px; /*  use your width here */
+}
+
+.content{
+    /* margin-top: 150px; */
+}
+
+
+.navHomeBtn {
+     color: #f6f;
+     font-weight: 500;
+     font-size: 17;
+     margin-left: 20px
+}
+
+a {
+  text-align: center;
+}
+
+.spacing{
+    letter-spacing: 6px;
+    opacity: 80%;
+    font-size: 16px;
+    text-align: center;
+}
+
+.sideLeftImage{
+    margin-top: 20px;
+    width: 49%;
+    float: right
+}
+
+.sideRightImage{
+    margin-top: 20px;
+    width: 49%;
+}
+
+
+.centerImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 38%;
+}
+img.bonousRateImg{
+    width: 403px;
+}
+
+.signUpEarlyText{
+    font-weight: 600;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 365px;
+    font-family: TiemposHeadline;
+}
+.dependingText{
+    text-align: center;
+    opacity: 60%;
+    font-weight: lighter;
+    margin-left: 52px;
+}
+.theMostText {
+    font-weight: 700 !important;
+    font-size: 65px;
+    font-family: TiemposHeadline;
+    letter-spacing: 0p;
+}
+
+.ourChecking{
+    opacity: 60%;
+    font-size: 24px;
+    font-weight: lighter;
+    margin-top: 16px
+
+}
+.navItemSpace{
+    margin-left: 25px;
+    opacity: 90%;
+}
+
+.emailInputBox{
+    border-radius: 13px;
+    margin-right: 85px;
+    height: 86px;
+}
+.emailIcon{
+    background: white;
+    border: 0px;
+}
+
+.joinNowNtn{
+background-color: #4643ee;
+    border-radius: 8%;
+    width: 126px;
+    height: 47px;
+}
+.homeAddress{
+        width: 30px;
+}
+
+.priorityAccess{
+      opacity: 70%;
+    font-weight: 500;  
+}
+.FDIOImg{
+
+}
+.bankingText{
+        margin: 0px 0px 0px 72px;
+    font-weight: 700;
+    opacity: 40%;
+    font-size: 12px;
+}
+.placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: red;
+  opacity: 1; /* Firefox */
+}
+
+.loginBtn{
+    width: 114px;
+    border-radius: 9px;
+    border-width: 3px;
+    border-color: #4643ee;
+    color: #4643ee;
+    font-weight: 700;
+    margin-left: 213px
+}
+.loginBtn:hover {    
+    background-color: #ffffff;
+    color: #4643ee;
+    border-color: #4643ee;
+}
+
+.signUpBtn {
+    width: 114px;
+    border-radius: 9px;
+    border-width: 3px;
+    border-color: #4643ee;
+    font-weight: 700;
+    background-color: #4643ee;
+    color: #ffffff;
+    margin-left: 19px;
+}
+
+.card1Item1{
+    background-color: #eefde2;
+    text-align: center;
+    margin-top: 100px;
+}
+.cardTitle{
+    font-weight: 700;
+    letter-spacing: 4px;
+    opacity: 60%;
+    font-size: 17px;
+     margin: 0px;
+     line-height: 1.1;
+}
+
+.cardPercentage{
+    font-size: 44px;
+    margin: 0px;
+    font-weight: 800;
+    color: #4643ee;
+    line-height: 1.1;
+}
+
+.perBadge{
+    color: #fff;
+    background-color: #00a86b;
+    height: 30px;
+    width: 40px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cashBack{
+    font-size: 17px;
+    font-weight: 500;
+    opacity: 50%;
+}
+.total{
+    font-size: 15px;
+    font-weight: 900;
+    opacity: 49%
+}
+ .sport{
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 69%;
+ }
+ .number{
+    color: #00a86b;
+    font-size: 20px;
+    font-weight: 700;
+ }
+ .textNumber{
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 69%;
+    margin-left: 61px
+ }
+.progressbarBg{
+    background-color: #00a86b;
+}
+.signupForNow{
+    border-radius: 9px;
+    border-width: 3px;
+    border-color: #4643ee;
+    font-weight: 700;
+    background-color: #4643ee;
+    color: #ffffff;
+    width: -webkit-fill-available;
+    margin-top: 20px;
+    height: 57px;
+    font-size: 19px;
+}
+
+.includes{
+    opacity: 26%;
+    font-size: 18px;
+    letter-spacing: 5px;
+}
+.tick {
+  list-style: none;
+  padding-inline-start: 0;
+}
+.green{
+       color: #00a86b;
+}
+.tick li:before {
+    content: '✓';
+    color: #00a86b;
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.listText{
+    margin-left: 14px;
+    font-weight: 500;
+    opacity: 80%;
+}
+.fundText{
+        opacity: 60%;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.thousand{
+    font-weight: 900;
+}
+
+.memberShip{
+    margin-left: 50px;
+    font-weight: 600;
+    text-decoration-line: line-through;
+    margin-bottom: 0rem;
+}
+
+.freeText{
+    margin-left: 50px;
+    font-size: 23px;
+    color: #1e7e34;
+    font-weight: 500;
+    margin-bottom: 0rem;
+
+}
+
+.savingText{
+      margin-left: 50px;;
+      margin-bottom: 0rem;
+          color: #1e7e34;
+              font-weight: 500;
+                  font-size: 17px;
+                      margin-bottom: 0rem;
+    
+}
+
+.textNumberStart{
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 69%;
+}
+
+.signupForNowDissable{
+        border-radius: 9px;
+    border-width: 3px;
+    border-color:gray;
+    font-weight: 700;
+    background-color:gray;
+    color: #ffffff;
+    width: -webkit-fill-available;
+    margin-top: 20px;
+    height: 57px;
+    font-size: 19px;
+}
+
+.shadow {
+  box-shadow: 5px 18px 64px 0 !important;
+}
+.emptySpace{
+       margin-top: 121px 
+}
+
+/* .viewMerchantsBox{
+    border: 0 solid #e2e8f0; 
+    background: #ecebff;
+} */
+
+
+.borderShape {
+    border-radius: 11px
+}
+
+.viewMerchantsBox {
+    border: 0 solid #e2e8f0;
+    background: #ecebff;
+    width: 1331px;
+    z-index: 999;
+    margin-left: -98px
+}
+.merchantsText{
+     text-align: center; 
+    margin-top: 62px;  
+}
+
+.getFiveText{
+    font-size: 44px;
+    font-weight: 700;
+}
+
+.hightlightText{
+    color: #00a86b;
+}
+
+.onJunoDebit{
+font-size: 25px;
+    opacity: 60%;
+}
+.outlining{
+    height: 700px;
+}
+
+.imageOutlining{
+    height: 451px;
+}
+
+.sideInfo{
+    margin-top: 251px;
+        margin-left: 8px;
+}
+
+.noPoints{
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.earnPerc{
+  font-size: 17px;
+    font-weight: 400;
+    opacity: 83%;
+}
+.RightSideInfo {
+     font-size: 26px;
+    font-weight: 600;
+    text-align-last: right;
+    padding-right: 8px;
+}
+
+.RightSideInfoText{
+      font-size: 17px;
+    font-weight: 400;
+    opacity: 83%;
+    text-align-last: right;
+    padding-right: 8px;
+    margin-bottom: 0px;
+
+}
+.cardsImg{
+    vertical-align: middle;
+    border-style: none;
+    max-width: 100%;
+    height: auto;
+}
+
+.ViewMerchantBtn{
+    height: 80px;
+    width: 358px;
+    color: white;
+    background: #4643ee;
+    border-radius: 10px;
+    font-size: 21px;
+    font-weight: 630;
+    margin:0 auto;
+    display:block;
+    margin-top: 30px;
+    border: 0px;
+}
+
+.checkingAccHeading{
+    margin-top: 100px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 44px;
+}
+
+.checkingAccText{
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    opacity: 65%;
+}
+
+.cardContainer {
+        margin: auto;
+        width: 1000px;
+        box-shadow: 5px 18px 64px 0 !important
+}
+.cardLeftHeading{
+        font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    opacity: 48%;
+       margin-bottom: 0px;
+}
+
+.cardLeftText{
+    color: #4643ee;
+    font-size: 35px;
+    font-weight: 700;
+}
+.rightSection{
+    text-align-last: right;
+}
+.cardLeftSmallText{
+    font-size: 23px;
+    font-weight: 700;
+    opacity: 88%;
+}
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;  
+  border-radius: 15px;
+
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  cursor: pointer;
+  border-radius: 50%;
+border: 2px solid blue;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.graphContainer{
+    background-color: #fbfbff;
+    height: 500px;
+    margin-top: 20px;
+
+}
+
+.graphOutlining{
+    width: 100%;
+    margin: auto;
+    height: 400px;
+    margin-top: 50px;
+}
+
+.floatingCardImg{
+     height: auto;
+    width: 250px;
+    z-index: 966;
+    margin-top: -53px;
+    /* text-align: center; */
+    margin-left: 50px;
+    position: absolute;
+}
+.barUpperCount{
+    margin: auto;
+    text-align: center !important;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.bar1{
+    margin-top: 6px !important;
+    width: 40px;
+    height: 234px;
+    margin: auto;
+    background-color: #00a86b;
+    border-radius: 5px;
+}
+
+.barLowerCount{
+        margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #00a86b
+}
+.barTypeText1{
+    font-size: 23px;
+    text-align: center;
+    font-weight: 500;
+}
+.barTypeText2{
+    font-size: 11px;
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: 4px;
+    opacity: 67%;
+}
+
+.barUpperCount1{
+    margin: auto;
+    margin-top: 50px;
+    text-align: center !important;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.weSay{
+    background-color: #f3f3ff;
+}
+.eyeImg{
+    margin: auto;
+    margin-top: 50px;
+    width: fit-content;
+}
+
+.eyeHeading{
+    margin: auto;
+    text-align: center;
+    font-size: 47px;
+    font-weight: 700;
+}
+
+.innerCard{
+     height: 300px;
+    width: 950px;
+    margin: auto
+}
+.avgText1{
+    font-size: 22px;
+    font-weight: 600;
+}
+.avgText2{
+        font-weight: 400;
+    opacity: 80%;
+    font-size: 16px;
+}
+
+.listNoText{
+    font-size: 20px;
+    font-weight: 600;
+}
+/* .bankingImg{
+    height: auto;
+    width: 1182px;
+} */
+
+.bankingImg{ height: auto;
+    position: absolute;
+    z-index: 999;
+    margin-left: -100px;
+    max-width: 1349px;
+    margin-top: 100px;
+}
+
+/* .container{
+ position: absolute;
+    z-index: 999;
+    margin-top: -610px;
+    margin-left: 600px;
+    height: 350px;
+    width: 550px;
+    background-color: white;
+} */
+
+.container {
+    position: absolute;
+    z-index: 999;
+    margin-top: 382px;
+    margin-left: 669px;
+    height: 349px;
+    width: 570px;
+    background-color: white;
+    border-radius: 9px;
+}
+
+.overlapText2{
+    font-weight: 700;
+    font-size: 20px;
+    opacity: 71%;
+    margin-top: 25px;
+}
+.overlapText3{
+font-weight: 500;
+    font-size: 16px;
+    opacity: 71%;
+    margin-top: 25px;
+}
+
+.controlSection{
+    background-image: url("https://juno-public.s3-us-west-1.amazonaws.com/Juno/wu-illustration-84.png");
+    width: 1200px;
+    height: 800px;
+}
+
+.financeHeading1{
+    font-size: 43px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.financeHeading2{
+    font-size: 21px;
+    width: 333px;
+    opacity: 70%;
+    margin-top: 20px
+}
+
+.salarySection{
+    margin-left: 116px;
+}
+
+.salImgText1{
+        font-size: 26px;
+    font-weight: 600;
+    margin-top: 4px;
+
+}
+.salImgText2{
+    font-size: 17px;
+    font-weight: 400;
+    opacity: 80%;
+}
+.gPayBtn1{
+border: 3px solid black;
+    width: 80px;
+    height: 51px;
+    border-radius: 6px;
+    background: white;;
+    background-image: url("./assets/apple-pay.svg");
+        background-repeat: no-repeat;
+    background-size: 75px 48px;
+    border: 0px !important
+}
+
+.gPayBtn2{
+border: 3px solid black;
+    width: 80px;
+    height: 51px;
+    border-radius: 6px;
+    margin-left: 7px;
+    background: white;
+    background-image:  url("./assets/google-pay.svg");
+    background-repeat: no-repeat;
+    background-size: 75px 48px;
+    border: 0px !important
+}
+
+.paySection{
+        width: 237px;
+    margin: auto
+}
+
+/* .depositsSection{
+    background-image: linear-gradient(180deg,#f7f7ff,#ecebff);
+    height: 500px;
+    width: auto;
+} */
+
+.depositsSection {
+    background-image: linear-gradient(180deg,#f7f7ff,#ecebff);
+    height: 500px;
+    width: 1326px;
+    z-index: 999;
+    margin-left: -93px;
+}
+
+.depHeading{
+    margin-top: 60px;
+    font-size: 48px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.depText{
+font-size: 25px;
+    text-align: center;
+    opacity: 60%
+}
+.cardBox{
+    width: 279px;
+    margin: auto;
+}
+
+.depCard{
+    display: block;
+    margin-top: 18px !important;
+    margin: auto;
+        width: 100px;
+    height: 66px;
+}
+
+.depCardInfo{
+        margin: auto;
+    width: 265px;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 17px;
+    font-weight: 400;
+    opacity: 79%;
+}
+
+.blogsSection{
+    width: 1327px;
+    height: 770px;
+    z-index: 999;
+    margin-left: -93px;
+}
+
+
+.heading {
+        font-size: 23px;
+}
+
+.info{
+        font-size: 16px;
+    font-weight: 400;
+    opacity: 75%;
+    margin-top: 20px;
+}
+
+.height{
+        height: 432px;
+        border-radius: 13px;
+        
+}
+.height:hover{ 
+    position: relative; 
+             top: -5px;
+             cursor: pointer;
+            }
+.writtenBy {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 17px !important;
+    font-size: 13px;
+    font-weight: 500;
+    opacity: 64%;
+}
+
+.blogsHeadingText{
+    text-align: center;
+    font-size: 49px;
+    font-weight: 600;
+    margin-top: 82px;
+}
+
+.blogsHeadingDesc{
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    opacity: 50%;
+}
+
+.cardSection{
+        margin-top: 77px !important;
+}
+.question{
+    background-color: white;
+    /* border-bottom: 0px; */
+}
+
+.questionIcon{
+  font-size: 48px;
+    font-size: 48px;
+    right: -1%;
+    margin-bottom: 0px;
+    position: absolute;
+    z-index: 999;
+    margin-top: -1px;
+    width: 47px;
+    height: 7px;
+}
+
+.questionIcon2{
+  font-size: 48px;
+     font-size: 48px;
+    right: 0%;
+    margin-bottom: 0px;
+    position: absolute;
+    z-index: 999;
+    margin-top: -10px;
+    width: 39px;
+    height: 17px;
+    -webkit-transform: rotate(90deg);
+}
+.questionText{
+    font-weight: 700;
+    font-size: 23px;
+}
+
+.accSection{
+    margin-top: 50px;
+}
+
+.ans{
+    opacity: 80%;
+    font-size: 16px;
+    width: 561px;
+}
+
+.mostPowerfull{
+    height: 500px;
+    width: 1346px;
+    z-index: 999;
+    margin-left: -98px;
+    background-color: #f9f9ff;
+    margin-top: 100px;
+}
+.mostPowerfullHeader{
+    text-align: center;
+    width: 372px;
+    margin-top: 100px;
+    font-weight: 700;
+}
+
+.mostPowerfullDesc{
+margin-top: 26px;
+    font-size: 23px;
+    opacity: 76%;
+      width: 410px;
+}
+
+.emailIdTextBox{
+        border-radius: 13px;
+    margin-right: -32px;
+    height: 86px;
+    margin-top: 180px;
+    margin-left: 89px;
+}
+
+.redirectButtons{
+        height: 35px;
+        margin-top: 70px;
+}
+
+.redirectBtn{
+    background: white;
+    border: 0px;
+    font-weight: 600;
+    opacity: 85%;
+    margin-left: 70px;
+}
+.redirectLinkLogo{
+
+}
+
+.hrLine{
+    margin-top: 70px;
+    width: 1346px;
+    background: #dee3e6;
+    height: 4px;
+    z-index: 999;
+    margin-left: -90px;
+    border: 0px;
+}
+
+.footer{
+    height: 500px;
+}
+
+.footerHeader{
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.footerLebel{
+    font-size: 13px;
+    font-weight: 500;
+    opacity: 68%;
+    margin-bottom: 5px;
+}
+
+.contactlessSection{
+
+}
+
+.paymentImg{
+    width: inherit;
+    height: auto;
+}
+.textSection{
+    margin-top: 58px;       
+    margin-left: 50px;
+}
+.ContactlessText{
+    font-weight: 500;
+    font-size: 45px;
+    margin-bottom: -19px
+}
+
+.ContactlessDesc{
+    margin-top: 32px;
+    font-size: 22px;
+    font-weight: 400;
+    opacity: 54%;
+}
+
+.comminSoonText {
+    font-size: 17px;
+    font-weight: 600;
+    color: #f6f;
+}

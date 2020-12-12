@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./Onjuno.css">
+    <!-- <link href="//db.onlinewebfonts.com/c/1d569bd8468dae8c6611321d70e333b1?family=Copyright+Klim+Type+Foundry"
+        rel="stylesheet" type="text/css" /> -->
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+        function toggleAccordianIcon(index) {
+            if (document.getElementById("collapseOne".concat(index)).className == "collapse") {
+                document.getElementById("question2").style.display = "none";
+
+            } else {
+                document.getElementById("question2").style.display = "block";
+                document.getElementById("question2").style.marginTop = "-36px"
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid layout">
+        <div class="header" id="myHeader">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/on-juno@2x.png" alt="" height="50px">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"><span class="navHomeBtn">Home</span></a>
+                        </li>
+                        <div class="navItemSpace">
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Company
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown"
+                                    style="border:0px; outline:0px;">
+                                    <a class="dropdown-item" href="#">About</a>
+                                    <a class="dropdown-item" href="#">NewsRoom</a>
+                                    <a class="dropdown-item" href="#">Careers</a>
+                                    <a class="dropdown-item" href="#">Partners</a>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="navItemSpace">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Learn
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown"
+                                    style="border:0px; outline:0px;">
+                                    <a class="dropdown-item " href="#">Blogs</a>
+                                    <a class="dropdown-item" href="#">Guides</a>
+                                    <a class="dropdown-item " href="#">HelP Center</a>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="navItemSpace">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Resources
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown"
+                                    style="border:0px; outline:0px;">
+                                    <a class="dropdown-item" href="#">Compare Interest Rates</a>
+                                </div>
+                            </li>
+                        </div>
+                        <li>
+                            <button type="button" class="btn btn-outline loginBtn">Login</button>
+                            <button type="button" class="btn signUpBtn">Signup</button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="col-md-6" style=" margin-top: 120px;">
+                    <h1 class="theMostText">The Most Powerful Checking Account</h1>
+                    <h3 class="ourChecking">Our checking account gives you higher returns
+                        <p>than a savings account with no hidden fees.</p>
+                    </h3>
+                    <div class="card emailInputBox">
+                        <div class="card-body">
+                            <!-- <span class="emailIcon"><img src="./assets/email.svg">
+                            <input type="text" class="form-control" placeholder="Recipient's username"
+                                aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <span>button</span> 
+                        </span> -->
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text emailIcon" id="basic-addon1"><img
+                                            src="./assets/email.svg"></span>
+                                </div>
+                                <input type="email" class="form-control" style=" border: 0px; color: red;"
+                                    placeholder="Enter Email Address" aria-label="Username"
+                                    aria-describedby="basic-addon1">
+                                <button type="button" class="btn btn-primary joinNowNtn">Join Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div style=" margin-top: 25px;">
+                        <span><img class="homeAddress" src="./assets/createaccount-homeaddress-flag@3x.png">
+                            <span class="priorityAccess">171 spots left for Priority Access</span>
+                    </div>
+                    <div style=" margin-top: 35px;">
+                        <span class="FDIOImg"></span>
+                        <p class="bankingText"> Banking Services Provided By
+                        </p>
+                        <p class="bankingText">
+                            Evolve Bank & Trust; Member FDIC
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img class="mobileImg" src="./assets//juno-mobile-app.png">
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <h3 class="spacing">BACKED BY THE BEST</h3>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+            <div class="row" style=" margin-top: 40px;">
+                <div class="col-md-4">
+                    <img class="sideLeftImage" src="assets/sequioa-image@3x.png">
+                </div>
+                <div class="col-md-4">
+                    <img class="centerImage" src="assets/polychain-capital@3x.png">
+                </div>
+                <div class="col-md-4">
+                    <img class="sideRightImage" src="assets/consensys-logo@3x.png">
+                </div>
+            </div>
+            <div class="row" style=" margin-top: 80px;">
+                <div class="col-md-7">
+                    <div>
+                        <h3 style="color: blue;">Start saving for a rainy day fund</h3>
+                    </div>
+                    <div>
+                        <h1><b>Use Our Checking Account to Achieve Your Financial Goals</b></h1>
+                    </div>
+                    <p>With the latest Federal rate cut, the largest banks are offering close to 0% APY on their
+                        checking
+                        and savings accounts.
+                        OnJuno checking will earn you more than 20x the national average*. Deposits up to $250,000 are
+                        FDIC
+                        insured through our
+                        banking partner Evolve Bank and Trust. Grow your idle money faster with our checking account and
+                        start saving towards a
+                        rainy day fund, big expense, or vacation.</p>
+
+                </div>
+                <div class="col-md-5">
+                    <img class="bonousRateImg" src="./assets/juno-apy-215.svg" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <h1 class="signUpEarlyText">Sign up early to save more</h1>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <h3 class="dependingText">Depending on the level of your checking account, you’ll earn between
+                        1.15%3 to
+                        2.15%1 bonus rate.
+                    </h3>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row" style="margin-top: 100px;">
+                <div class="col-md-4">
+                    <img class="floatingCardImg" src="./assets/juno-black-card@3x.png">
+                    <div class="card shadow" style="width: 22rem; color: gray;">
+                        <ul class="list-group list-group-flush" style="background-color: #eefde2">
+                            <li class="list-group-item card1Item1">
+                                <p class="cardTitle">METAL</p>
+                                <p class="cardPercentage">2.15%</p>
+                                <p><span class="badge badge-secondary perBadge">5%</span> <span class="cashBack">cash
+                                        back</span></p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <span class="number">2329</span><span class="total">/2500</span><span
+                                            class="sport">
+                                            spots</span>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <span class="textNumber">171 spots left</span>
+                                    </div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progressbarBg" role="progressbar" style="width: 90%"
+                                        aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                                <button class="signupForNow" type="button" class="btn signUpBtn">Sign Up Now</button>
+                            </li>
+                            <li class="list-group-item">
+                                <h3 class="includes">INCLUDES</h3>
+                                <ul class="tick">
+                                    <li><i class="fa-li fa fa-check green"></i><span class="listText">Charcoal Black
+                                            Metal
+                                            Card</span></li>
+                                    <li><i class="fa-li fa fa-check green"></i><span class="listText">2.15%1 Bonus Rate
+                                            Checking
+                                            Account</span></li>
+                                    <li><i class="fa-li fa fa-check green"></i><span class="listText">5% Cash back on
+                                            brands
+                                            you love</span>
+                                    </li>
+                                    <li><i class="fa-li fa fa-check green"></i><span class="listText">Free Cash
+                                            Withdrawals</span></li>
+                                    <li><i class="fa-li fa fa-check green"></i><span class="listText">Phone & Chat
+                                            Support</span></li>
+                                </ul>
+                                <p class="fundText">
+                                    Fund your account with a minimum opening deposit of <span class="thousand">
+                                        $1000.</span> 3 additional free ATM
+                                    withdrawals per month from out of
+                                    network ATMs.
+                                </p>
+                            </li>
+                            <li style="background-color: #c2f6e3">
+                                <p style="margin-bottom: 0rem">
+                                    <span class="memberShip">$11.99/m Membership Fee</span>
+                                </p>
+                                <p class="freeText">Free for 6 months</p>
+                                <p class="savingText">~$72 Savings</p>
+
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow" style="width: 22rem;">
+                        <img class="floatingCardImg" src="./assets/juno-plus@3x.png">
+                        <ul class="list-group list-group-flush" style="background-color: #eefde2">
+                            <li class="list-group-item card1Item1">
+                                <p class="cardTitle">PREMIUM</p>
+                                <p class="cardPercentage">1.65%</p>
+                                <p><span class="badge badge-secondary perBadge">5%</span> <span class="cashBack">cash
+                                        back</span></p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <span class="textNumberStart">2000 spots</span>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <span class="textNumber">2000 spots left</span>
+                                    </div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 00%" aria-valuenow="0"
+                                        aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                                <button class="signupForNowDissable" type="button" class="btn signUpBtn">Up
+                                    Next</button>
+                            </li>
+                            <li class="list-group-item">
+                                <h3 class="includes">INCLUDES</h3>
+                                <ul class="tick">
+                                    <li><i class="fa-li fa fa-check green"></i><span class="listText">Charcoal Black
+                                            Metal
+                                            Card</span></li>
+                                    <li><i class="fa-li fa fa-check green"></i><span class="listText">2.15%1 Bonus Rate
+                                            Checking
+                                            Account</span></li>
+                                    <li><i class="fa-li fa fa-check green"></i><span class="listText">5% Cash back on
+                                            brands
+                                            you love</span>
+                                    </li>
+                                    <li><i class="fa-li fa fa-check green"></i><span class="listText">Free Cash
+                                            Withdrawals</span></li>
+                                    <li><i class="fa-li fa fa-check green"></i><span class="listText">Phone & Chat
+                                            Support</span></li>
+                                </ul>
+                                <p class="fundText">
+                                    Fund your account with a minimum opening deposit of <span class="thousand">
+                                        $1000.</span> 3 additional free ATM
+                                    withdrawals per month from out of
+                                    network ATMs.
+                                </p>
+                            </li>
+                            <li>
+                                <p style="margin-bottom: 0rem;">
+                                    <span class="memberShip">$11.99/m Membership Fee</span>
+                                </p>
+                                <p class="freeText">Free for 6 months</p>
+                                <p class="savingText">~$72 Savings</p>
+
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <img class="floatingCardImg" src="./assets/juno-basic@3x.png">
+                    <div class="card shadow" style="width: 22rem;">
+                        <ul class="list-group list-group-flush" style="background-color: #eefde2">
+                            <li class="list-group-item card1Item1">
+                                <p class="cardTitle">BASIC</p>
+                                <p class="cardPercentage">2.15%</p>
+                                <p><span class="badge badge-secondary perBadge">5%</span> <span class="cashBack">cash
+                                        back</span></p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <span class="number">2329</span><span class="total">/2500</span><span
+                                            class="sport">
+                                            spots</span>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <span class="textNumber">171 spots left</span>
+                                    </div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 00%" aria-valuenow="95"
+                                        aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                                <button class="signupForNowDissable" type="button" class="btn signUpBtn">Comming
+                                    Soon</button>
+                            </li>
+                            <li class="list-group-item">
+                                <h3 class="includes">INCLUDES</h3>
+                                <ul class="tick">
+                                    <li><i class="fa-li fa fa-check green"></i><span class="listText">Charcoal Black
+                                            Metal
+                                            Card</span></li>
+                                    <li><i class="fa-li fa fa-check green"></i><span class="listText">2.15%1 Bonus Rate
+                                            Checking
+                                            Account</span></li>
+                                    <li><i class="fa-li fa fa-check green"></i><span class="listText">5% Cash back on
+                                            brands
+                                            you love</span>
+                                    </li>
+                                    <li><i class="fa-li fa fa-check green"></i><span class="listText">Free Cash
+                                            Withdrawals</span></li>
+                                    <li><i class="fa-li fa fa-check green"></i><span class="listText">Phone & Chat
+                                            Support</span></li>
+                                </ul>
+                                <p class="fundText">
+                                    Fund your account with a minimum opening deposit of <span class="thousand">
+                                        $1000.</span> 3 additional free ATM
+                                    withdrawals per month from out of
+                                    network ATMs.
+                                </p>
+                            </li>
+                            <li>
+                                <p style="margin-bottom: 0rem;">
+                                    <span class="memberShip">$11.99/m Membership Fee</span>
+                                </p>
+                                <p class="freeText">Free for 6 months</p>
+                                <p class="savingText">~$72 Savings</p>
+
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="emptySpace">
+
+            </div>
+
+            <div class="viewMerchantsBox">
+                <span class="merchantsText">
+                    <h1 class="getFiveText">Get <span class="hightlightText">5% cash back</span> on 5 brands you love
+                    </h1>
+                    <p class="onJunoDebit">OnJuno Debit Card rewards you like a credit card without the high fees and
+                        debt
+                    </p>
+                </span>
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="outlining sideInfo">
+                                    <h3 class="noPoints">No points, direct cash back</h3>
+                                    <p class="earnPerc">Earn 5% cash back on 5 brands you love, up to $3,000 per year in
+                                        spends.</p>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6">
+                                <div class="imageOutlining">
+                                    <img class="cardsImg" src="./assets/cards@3x.png">
+                                    <button class="ViewMerchantBtn" type="button">View All Merchants</button>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="outlining sideInfo">
+                                    <h3 class="RightSideInfo">Access to cash,</h3>
+                                    <h3 class="RightSideInfo">anytime</h3>
+                                    <p class="RightSideInfoText">Enjoy free cash withdrawals at</p>
+                                    <p class="RightSideInfoText">85,000+ ATMs across our</p>
+                                    <p class="RightSideInfoText">partners' ATM network</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+
+
+                </div>
+            </div>
+            <div>
+                <h2 class="checkingAccHeading">
+                    The Checking Account that beats them all
+                </h2>
+                <p class="checkingAccText">Setup monthly direct deposits to grow your money faster.</p>
+            </div>
+            <div class="card cardContainer">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="cardLeftHeading">MONTHLY DEPOSIT</p>
+                            <p class="cardLeftText" id="leftSideCount">$500</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="rightSection">
+                                <p class="cardLeftHeading">ONJUNO RETURNS</p>
+                                <span class="cardLeftText" id="rightSideCount" style="color: green;">$1698</span><span
+                                    class="cardLeftSmallText">
+                                    in 5
+                                    years</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slidecontainer">
+                        <input class="slider" id="myRange" type="range" min="0" max="100" value="00">
+                    </div>
+                    <script>
+                        var slider = document.getElementById("myRange");
+                        var leftCount = document.getElementById("leftSideCount");
+                        var rightCount = document.getElementById("rightSideCount")
+                        slider.oninput = function () {
+                            slider.style.background = 'linear-gradient(to right, blue ' + this.value + '%, #fff ' + this.value + '%, grey 100%)'
+                            leftCount.innerHTML = "$".concat(this.value * 500);
+                            rightCount.innerHTML = "$".concat(this.value * 1698);
+
+                        }
+                    </script>
+                </div>
+                <div class="graphContainer">
+                    <div class="row">
+                        <div class="col-md-2 graphOutlining">
+                            <div class="barUpperCount">
+                                $6,794
+                            </div>
+                            <div class="bar1">
+                            </div>
+                            <div class="barLowerCount">
+                                2.15%
+                            </div>
+                            <div class="barTypeText1">OnJuno</div>
+                            <div class="barTypeText2">METAL<br>
+                                CHECKING</div>
+                        </div>
+                        <div class="col-md-2 graphOutlining">
+                            <div class="barUpperCount" style=" margin-top: 75px;">
+                                $6,794
+                            </div>
+                            <div class="bar1" style="height: 164px;background-color: gray;">
+                            </div>
+                            <div class="barLowerCount">
+                                0.8%
+                            </div>
+                            <div class="barTypeText1">Marcus</div>
+                            <div class="barTypeText2">SAVINGS<br>
+                                ACCOUNT</div>
+
+                        </div>
+                        <div class="col-md-2 graphOutlining">
+                            <div class="barUpperCount" style=" margin-top: 110px;">
+                                $2,684
+                            </div>
+                            <div class="bar1" style="height: 130px;background-color: gray;">
+                            </div>
+                            <div class="barLowerCount">
+                                2.15%
+                            </div>
+                            <div class="barTypeText1">Wealthfront</div>
+                            <div class="barTypeText2">CASH<br>
+                                ACCOUNT</div>
+                        </div>
+                        <div class="col-md-2 graphOutlining">
+                            <div class="barUpperCount" style=" margin-top: 160px;">
+                                $152
+                            </div>
+                            <div class="bar1" style="height: 85px;background-color: gray;">
+                            </div>
+                            <div class="barLowerCount">
+                                0.02%
+                            </div>
+                            <div class="barTypeText1">BofA</div>
+                            <div class="barTypeText2">ADV<br>
+                                RELATIONSHIP</div>
+                        </div>
+                        <div class="col-md-2 graphOutlining">
+                            <div class="barUpperCount" style=" margin-top: 200px;">
+                                $76
+                            </div>
+                            <div class="bar1" style="height: 50px;background-color: gray;">
+                            </div>
+                            <div class="barLowerCount">
+                                0.01%
+                            </div>
+                            <div class="barTypeText1">Chase</div>
+                            <div class="barTypeText2">PREMIER</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="startSavingNowBtn" style="margin-top: 50px;">
+                <button class="ViewMerchantBtn" type="button">Start Saving Now</button>
+            </div>
+            <div class="card">
+                <div class="card-body weSay">
+                    <!-- <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4"><img class="eyeImg" src="./assets/eye.jpg"></div>
+                    <div class="col-md-4"></div>
+                </div> -->
+                    <div class="eyeImg">
+                        <img src="./assets/eye.png">
+                    </div>
+                    <div>
+                        <h1 class="eyeHeading">We Say No to Hidden Fees</h1>
+                    </div>
+                    <div class="innerCard" style="margin-top: 50px;">
+                        <div class="row">
+                            <div class="col-md-5" style="margin: auto;">
+                                <p class="avgText1">Average American pays over<br>
+                                    $329 a year in bank fees every year.</p>
+                                <p class="avgText2">As a digital banking platform, we keep our costs low with no
+                                    physical
+                                    branches or on-site
+                                    staff. We don't need to charge
+                                    our customers with unnecessary hidden fees.</p>
+                            </div>
+                            <div class="col-md-5" style="margin: auto;">
+                                <ul class="tick" style="margin-left: 95px;">
+                                    <li><i class="fa-li fa fa-check green"></i><span class="listNoText"> No Minimum
+                                            Balance</span></li>
+                                    <li><i class="fa-li fa fa-check green"></i> <span class="listNoText"> No ATM
+                                            Withdrawal
+                                            Fee</span></li>
+                                    <li><i class="fa-li fa fa-check green"></i> <span class="listNoText"> No ACH
+                                            Transfer
+                                            Fee</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div>
+                <img class="bankingImg" src="https://juno-public.s3-us-west-1.amazonaws.com/Juno/banking-for-all.png">
+                <div class="card">
+                    <div class="card-body container">
+                        <h1>Banking for all to reduce wealth inequality</h1>
+                        <p class="overlapText2">Our giving pledge - 2.15% of our company profits go towards charities in
+                            India</p>
+                        <p class="overlapText3">Together we can empower low-income groups in India to change the
+                            trajectory
+                            of their lives and
+                            build more inclusive
+                            economies for all.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="controlSection" style="margin-top: 1100px;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="financeHeading1">The New Financial Control Center</p>
+                        <p class="financeHeading2">OnJuno helps you spend smarter, save better, and grow your money
+                            faster
+                        </p>
+                        <div class="salarySection">
+                            <img src="./assets/early-salary@3x.png" style="width: 60px;">
+                            <p class="salImgText1">Spend Securely</p>
+                            <p class="salImgText2">Connect your OnJuno card and start using Apple and Google Pay
+                                instantly
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4" style="margin-top: 200px;">
+                        <div class="paySection">
+                            <button class="gPayBtn1"></button>
+                            <button class="gPayBtn2"></button>
+                            <p class="salImgText1">Apple & Google Pay</p>
+                            <p class="salImgText2">Connect your OnJuno card and start using Apple and Google Pay
+                                instantly
+                            </p>
+                            <img src="./assets/bills@3x.png" style="width: 60px; margin-top:100px;">
+                            <p class="salImgText1"><img>Bill Payments</p>
+                            <p class="salImgText2"><img>Automate your bill payments or deposit a check simply by taking
+                                a
+                                picture
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="paySection">
+                            <img src="./assets/remittance@3x.png" style="width: 60px; margin-top:300px;">
+                            <p class="salImgText1">Subscriptions</p>
+                            <p class="salImgText2">Track and manage your monthly subscriptions across products at one
+                                place
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contactlessSection">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="paymentImg" src="./assets/payements-2x.jpg">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="textSection">
+                            <p class="comminSoonText">Coming soon</p>
+                            <p class="ContactlessText">Contactless Payments</p>
+                            <p class="ContactlessText">Made Easy</p>
+                            <p class="ContactlessDesc">You can now pay at your favorite stores, online and apps via
+                                Apple
+                                Pay,
+                                Google Pay and Samsung
+                                Pay. The OnJuno Metal
+                                card will enable to you to pay contactless at stores that prefer the contactless card
+                                payments.
+                            </p>
+                            <div class="row" style="margin-top: 60px;">
+                                <img src="./assets/apple-pay.svg">
+                                <img style="margin-left: 20px;" src="./assets/google-pay.svg">
+                                <img style="margin-left: 20px;" src="./assets/samsung-pay.svg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="depositsSection">
+                <p class="depHeading">We have got you covered</p>
+                <p class="depText">Your deposits are safe and secure</p>
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card borderShape">
+                                    <div class="card-body">
+                                        <img class="depCard"
+                                            src="https://juno-public.s3-us-west-1.amazonaws.com/Juno/svg/fdic-logo.svg">
+                                        <p class="depCardInfo">Your deposits are insured up to $250,000 through Evolve
+                                            Bank
+                                            and
+                                            Trust, Member FDIC.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card borderShape">
+                                    <div class="card-body">
+                                        <img class="depCard"
+                                            src="https://juno-public.s3-us-west-1.amazonaws.com/Juno/svg/mc-symbol.svg">
+                                        <p class="depCardInfo">With our card partner’s Zero Liability policy, you’re
+                                            protected
+                                            from
+                                            unauthorized transactions.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card borderShape">
+                                    <div class="card-body">
+                                        <img class="depCard"
+                                            src="https://juno-public.s3-us-west-1.amazonaws.com/Juno/svg/secure-icon.svg">
+                                        <p class="depCardInfo">Your deposits are insured up to $250,000 through Evolve
+                                            Bank
+                                            and
+                                            Trust, Member FDIC.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="blogsSection">
+                <h1 class="blogsHeadingText">Blogs</h1>
+                <p class="blogsHeadingDesc">Top Stories and Ideas from the OnJuno Team</p>
+                <div class="row cardSection">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card height">
+                                    <img class="card-img-top" src="./assets/small_v_001_7bcaa55e1e.jpeg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title heading">Form I-797 Notice of Action Explained</h5>
+                                        <p class="card-text info">Breaking down the different types of I-797 Notice of
+                                            Action
+                                            forms</p>
+                                        <p class="card-text writtenBy"> By Michelle Jackson</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card height">
+                                    <img class="card-img-top" src="./assets/small_ds_001_471f4ee304.jpeg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title heading">The Big Three: Money Moves to Make in Your 30s
+                                        </h5>
+                                        <p class="card-text info">Riding high in your prime? Here’s how to make the most
+                                            of
+                                            it
+                                            when it comes to your finances.</p>
+                                        <p class="card-text writtenBy">By Laura Southwick</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card height">
+                                    <img class="card-img-top" src="./assets/small_fd_001_aa3abf5b7a.png"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title heading">Is There a Best Time of the Year to Purchase
+                                            Rental
+                                            Property?
+                                        </h5>
+                                        <p class="card-text info">Yes, but get ready to slog around in slush and snow
+                                        </p>
+                                        <p class="card-text writtenBy">By Kathryn Pomroy</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+
+            <div class="questionsSection">
+                <div class="questionsContainer">
+                    <div class="row">
+                        <div class="col-md-2">
+
+                        </div>
+                        <div class="col-md-8">
+                            <h1 style="text-align: center;">Frequently Asked Questions</h1>
+                            <div class="accordion accSection" id="accordionExample">
+                                <div class="card" style="border: 0px;">
+                                    <div class="card-header question" id="headingOne">
+                                        <h5 onclick="toggleAccordianIcon(1)" class="mb-0 questionText"
+                                            data-toggle="collapse" data-target="#collapseOne1" aria-expanded="true"
+                                            aria-controls="collapseOne1">
+                                            Is OnJuno a bank?
+                                            <img id="question1" class="questionIcon" src="./assets/questionMinus.png">
+                                            <img id="question2" class="questionIcon2" src="./assets/questionMinus.png">
+                                            <div style="border-bottom: 0px;"></div>
+                                        </h5>
+
+                                    </div>
+
+                                    <div id="collapseOne1" class="collapse" aria-labelledby="headingOne"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body ans">
+                                            OnJuno is not a federal bank. We offer our banking services through our
+                                            partnership with Evolve Bank and Trust who holds
+                                            all deposits and will issue the OnJuno Debit Card as well
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="border: 0px;">
+                                    <div class="card-header question" id="headingTwo">
+                                        <h5 onclick="toggleAccordianIcon(2)" class="mb-0 questionText"
+                                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                                            aria-controls="collapseTwo">
+                                            Is this a promotional rate?
+                                            <img class="questionIcon" id="question2" src="./assets/questionPlus.png">
+
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body ans">
+                                            Yes, this is a promotional rate for our Priority Access users. All Priority
+                                            Access users get a 2.15%1 bonus rate of up
+                                            to $50,000 in deposits till April 30, 2021. The yearly bonus rate drops to
+                                            0.50%
+                                            beyond $50,000.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="border: 0px;">
+                                    <div class="card-header question" id="headingTwo">
+                                        <h5 onclick="toggleAccordianIcon(2)" class="mb-0 questionText"
+                                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                                            aria-controls="collapseTwo">
+                                            Why is this rate subject to change?
+                                            <img class="questionIcon" id="question2" src="./assets/questionPlus.png">
+
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body ans">
+                                            The bonus rate for OnJuno is based on a blended rate that is dependent on
+                                            the
+                                            federal funds rate and our bonus rate
+                                            offered. We move your funds to partner banks who accept and maintain
+                                            deposits
+                                            and pay a rate based on the federal rate.
+                                            OnJuno offers a bonus on top of the federal rate to help people get a 2.15%1
+                                            bonus rate.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="border: 0px;">
+                                    <div class="card-header question" id="headingTwo">
+                                        <h5 onclick="toggleAccordianIcon(2)" class="mb-0 questionText"
+                                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                                            aria-controls="collapseTwo">
+                                            Will I be charged a fee?
+                                            <img class="questionIcon" id="question2" src="./assets/questionPlus.png">
+
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body ans">
+                                            We do not have any account opening or maintenance fees for opening an OnJuno
+                                            account. We do not charge fees on cash
+                                            withdrawals and foreign transactions.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="border: 0px;">
+                                    <div class="card-header question" id="headingTwo">
+                                        <h5 onclick="toggleAccordianIcon(2)" class="mb-0 questionText"
+                                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                                            aria-controls="collapseTwo">
+                                            How is this different from a cash account?
+                                            <img class="questionIcon" id="question2" src="./assets/questionPlus.png">
+
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body ans">
+                                            OnJuno is a high yield checking account. You can use this checking account
+                                            to
+                                            make transfers, debit card purchases, and
+                                            bill payments. Cash accounts are saving instruments that do not offer the
+                                            same
+                                            flexibility of a checking account.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="border: 0px;">
+                                    <div class="card-header question" id="headingTwo">
+                                        <h5 onclick="toggleAccordianIcon(2)" class="mb-0 questionText"
+                                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                                            aria-controls="collapseTwo">
+                                            Why do we need to connect our bank account for Priority Access?
+                                            <img class="questionIcon" id="question2" src="./assets/questionPlus.png">
+
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body ans">
+                                            We are pre-qualifying users for Priority Access. When you connect your bank
+                                            account, we analyze the balances and
+                                            transactions to understand the usage patterns. This helps in onboarding the
+                                            right set of users who will benefit from the
+                                            Priority Access. We do not have any authorization on ACH transfers or Debits
+                                            and
+                                            your data is secure.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="mostPowerfull">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h1 class="mostPowerfullHeader">The Most Powerful Checking Account</h1>
+                                <p class="mostPowerfullDesc">Our checking account gives you higher returns than a
+                                    savings
+                                    account with no hidden fees.
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card emailIdTextBox">
+                                    <div class="card-body">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text emailIcon" id="basic-addon1"><img
+                                                        src="./assets/email.svg"></span>
+                                            </div>
+                                            <input type="email" class="form-control" style=" border: 0px; color: red;"
+                                                placeholder="Enter Email Address" aria-label="Username"
+                                                aria-describedby="basic-addon1">
+                                            <button type="button" class="btn btn-primary joinNowNtn">Join Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+
+                </div>
+
+            </div>
+
+            <div class="">
+                <div class="redirectButtons" style="margin-top: 70px;">
+                    <img style="height: inherit" src="./assets/on-juno@2x.png">
+                    <button class="redirectBtn" style=" margin-left: 400px;">Products</button>
+                    <button class="redirectBtn">Cash Back</button>
+                    <button class="redirectBtn">Saving Calculator</button>
+                    <button class="redirectBtn">Security</button>
+                </div>
+            </div>
+            <hr class="hrLine">
+            <div class="footer">
+                <div class="row" style="margin-top: 100px;">
+                    <div class="col-md-2" style="margin-left: 5px;">
+                        <p class="footerHeader">Company</p>
+                        <p class="footerLebel">About</p>
+                        <P class="footerLebel">Newsroom</P>
+                        <p class="footerLebel">Careers</p>
+                        <p class="footerLebel">Partners</p>
+                    </div>
+                    <div class="col-md-2" style="margin-left: 15px;">
+                        <p class="footerHeader">Learn</p>
+                        <p class="footerLebel">Blob</p>
+                        <P class="footerLebel">Guides</P>
+                        <p class="footerLebel">Help Center</p>
+                    </div>
+                    <div class="col-md-2" style="margin-left: 15px;">
+                        <p class="footerHeader">Respurces</p>
+                        <P class="footerLebel">Interest rate</P>
+                    </div>
+                    <div class="col-md-2" style="margin-left: 15px;">
+                        <p class="footerHeader">Legal</p>
+                        <p class="footerLebel">Privacy Policy</p>
+                        <p class="footerLebel">Tearms of use</p>
+                        <p class="footerLebel">Bonus Tearm</p>
+                        <p class="footerLebel">Trademarks</p>
+                    </div>
+                    <div class="col-md-2" style="margin-left: 15px;">
+                        <p class="footerHeader">Contact Us</p>
+                        <p class="footerLebel">Talk to us</p>
+                        <p class="footerLebel">Chat with support</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
